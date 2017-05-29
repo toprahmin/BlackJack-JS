@@ -5,16 +5,15 @@ class PlayerWallet {
     constructor(balance){
         this.balance = balance;
     }
-    helloWorld(){
-        return  "Hello World";
-    }
+   
     getBalance(){
-        return balance;
+        return this.balance;
     }
 
     setBalance(money){
-        balance = balance + money;
-        return balance;
+        this.balance = this.balance + money;
+        return this.balance;
     }
 }
+
 
