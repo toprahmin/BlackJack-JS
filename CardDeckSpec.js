@@ -8,7 +8,7 @@ describe("Card deck", function(){
         expect(cardDeck.newDeck().length).toBe(312);
     });
 
-    it("The last card in the deck should be", function(){
+    it("The last card in the deck should be Ace of Spade", function(){
         expect(cardDeck.deckOfCards[311].toString()).toEqual("Ace of Spades");
     });
 });
