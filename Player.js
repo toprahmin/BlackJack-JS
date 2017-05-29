@@ -6,11 +6,8 @@ class Player{
         this.playerHand = [];
     }
 
-    hitMe(){
-        while(this.playerCardValue < 21){
-            
-        }
+    hitMe(dealer){
+        this.playerHand.push(dealer.dealRandomCard());
+        return this.playerHand;
     }
-
-
 }
