@@ -1,33 +1,35 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>BlackJack</title>
 
-        <link rel="shortcut icon" type="image/png" href="jasmine_favicon.png">
-        <link rel="stylesheet" href="jasmine.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-        <script src="jasmine.js"></script>
-        <script src="jasmine-html.js"></script>
-        <script src="boot.js"></script>
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <!-- include source files here... -->
-        <script src="Player.js"></script>
-        <script src="GamePlay.js"></script>
-        <script src="Cards.js"></script>
-        <script src="Dealer.js"></script>
-        <script src="PlayerWallet.js"></script>
-
-        <!-- include spec files here... -->
-        <script src="PlayerSpec.js"></script>
-        <script src="GamePlaySpec.js"></script>
-        <script src="CardsSpec.js"></script>
-        <script src="DealerSpec.js"></script>
-        <script src="PlayerWalletSpec.js"></script>
-
-
-    </head>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <title>BlackJack</title>
+</head>
 <body>
+    <header class="main-header group">
+        <div class="title"></div>
+        
+    </header>
 
+    <h1>Street BlackJack</h1>
+
+    <section id="menu">
+      <button type="button" class="btn btn-primary" onclick="helloWorld()">New Game</button>
+      <button type="button" class="btn btn-success" onclick="helloWorld()">Bet</button>
+      <button type="button" class="btn btn-warning" onclick="helloWorld()">Hold</button>
+      <button type="button" class="btn btn-danger" onclick="helloWorld()">Hit Me</button>
+      <button type="button" class="btn btn-primary" onclick="helloWorld()">Exit Game</button>
+    </section>
+
+    <section id="main">
+    	<div id="display"></div>
+    </section>
+
+ 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
