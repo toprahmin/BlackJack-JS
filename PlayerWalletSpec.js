@@ -14,7 +14,5 @@ describe("Player Wallet", function(){
     it("should return balance is 150", function(){
             expect(wallet.setBalance(150)).toBe(150);
         });
-
-    
 });
     
