@@ -20,10 +20,10 @@ describe("GetPlayerHandValue", function(){
 
     player.hitMe(dealer);
     player.hitMe(dealer);
-    player.hitMe(dealer);
+    //player.hitMe(dealer);
     var value = player.getPlayerHandValue();
     it("The playerCardValue should return a value greater than 0", function(){
-        expect(value).toBeGreaterThan(0);
-        expect(player.playerHand.length).toBe(3);
+        expect(value).toBeGreaterThan(11);
+        expect(player.playerHand.length).toBe(2);
     });
 });

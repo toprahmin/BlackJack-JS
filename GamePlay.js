@@ -3,11 +3,12 @@ class GamePlay{
     constructor(){
     this.dealer = new Dealer();
     this.player = new Player();
+    this.cardCounter = 0; 
 }
-    display = document.getElementById("display");
+    display = document.getElementById("alert");
 
 displayPlayerCards(){
-    for(var i = 0; i < this.player.playerHand.lenght; i++ ){
+    for(var i = 0; i < this.player.playerHand.length; i++){
         display.innerHTML = this.player.playerHand[i];
     }
     
@@ -22,20 +23,19 @@ DisplayWinner(){
 }
 
 cardCounter(){
+    let cardCounter = 0;
+    cardCounter = 312 - this.dealer.deck.deckOfCards.length;
+    return cardCounter;
+}
+
+// validatePlayerBalance(){
+// }
+
+// payPlayer(){
+// }
+
+// createNewGame(){
+// }
 
 }
 
-validatePlayerBalance(){
-
-}
-
-payPlayer(){
-
-}
-
-createNewGame(){
-
-}
-
-
-}

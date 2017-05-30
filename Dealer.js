@@ -1,3 +1,4 @@
+'use strict'
 class Dealer{
     constructor(hand,deck){
         this.hand = [];
@@ -14,14 +15,18 @@ class Dealer{
             deckOfCards[j] = temp;
         }
     }
-    
-    initialDeal(){
-        
-    }
-
     dealCard(){
         return this.deck.deckOfCards.pop();
     }
+
+    initialDeal(player){
+        player.playerHand.push(this.dealCard());
+        this.hand.push(this.dealCard());
+        player.playerHand.push(this.dealCard());
+        this.hand.push(this.dealCard());
+    }
+
+    
        
 }
 

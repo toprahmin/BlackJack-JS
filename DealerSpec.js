@@ -17,16 +17,25 @@ describe("Dealer", function(){
         expect(dealer.deck.deckOfCards[311].toString()).not.toEqual("Ace of Spades");
     });
 
-it("The last card in the deck should not be an Ace of Spades", function(){
-     var dealer = new Dealer();
-     expect(dealer.dealCard().toString()).not.toEqual("Ace of Spades");
+    it("The last card in the deck should not be an Ace of Spades", function(){
+        var dealer = new Dealer();
+        expect(dealer.dealCard().toString()).not.toEqual("Ace of Spades");
+        });
+
+    it("The deck should decrease in size as card is delt", function(){
+        var dealer = new Dealer();
+        dealer.dealCard();
+        dealer.dealCard();
+        expect(dealer.deck.deckOfCards.length).toBe(310);
     });
 
-it("The deck should decrease in size as card is delt", function(){
-    var dealer = new Dealer();
-    dealer.dealCard();
-    dealer.dealCard();
-    expect(dealer.deck.deckOfCards.length).toBe(310);
+    it("playerHand and DealerHand should both have 2 cards after initial deal", function(){
+        var dealer = new Dealer();
+        var player = new Player();
+        dealer.initialDeal(player);
+        expect(dealer.hand.length).toBe(2);
+        expect(player.playerHand.length).toBe(2);
+        
     });
 });
     
