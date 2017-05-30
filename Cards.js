@@ -4,6 +4,14 @@ class Card{
         this.suit = suit;
     }
 
+    valueOf(){
+        if(this.value < 11){
+            return this.value;
+        } else if(this.value < 14){
+            return 10;
+        } else return 1;
+    }
+
     getValue(){
         if(this.value === 11){
             return "Jack";
